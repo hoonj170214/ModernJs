@@ -7,4 +7,5 @@ fetch('student.json') //json 파일에 접근
       <li>${student.grade}</li></ul>`;
     });
     document.querySelector('#result').innerHTML = output;
-  }).catch;
+  })
+  .catch((error) => console.log(error));
